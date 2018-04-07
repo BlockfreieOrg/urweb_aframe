@@ -14,4 +14,5 @@ matrix:
 before_install:
   -eval "${MATRIX_EVAL}"
 
-install: make
+script:
+  - make all
