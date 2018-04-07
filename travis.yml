@@ -1,0 +1,17 @@
+language: c
+
+dist: trusty
+sudo: required
+
+matrix:
+  include:
+    - os: linux
+      addons:
+        apt:
+          packages:
+            - urweb
+
+before_install:
+  -eval "${MATRIX_EVAL}"
+
+install: make

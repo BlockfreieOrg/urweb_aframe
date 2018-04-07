@@ -1,0 +1,5 @@
+rewrite url App/main
+rewrite url App/*
+ffi aframe
+
+app
